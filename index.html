@@ -11,8 +11,15 @@
     <div class="header"><div class="title">Le Etch Le Sketch</div></div>
     <div class="content">
     <div class="containerHeaven"></div>
+    
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <button id="Resize" onclick="def = parseInt(window.prompt('Enter new size (128 max)')); set(def);">Resize</button>
+        <button id="Reset" onclick="set(def);">Reset</button>
+        <button id="B/W" onclick="color = false; updatePage();">Monochrome</button>
+        <button id="Color" onclick="color = true; updatePage();">Color</button>
+        <input type="color" id="Selected">
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
